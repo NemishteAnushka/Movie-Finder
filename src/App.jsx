@@ -24,7 +24,9 @@ const router = createBrowserRouter(
         loader={SinglePageLoader}
       />
     </Route>
-  )
+  ),
+  { basename: "/Movie-Finder" }
+
 );
 function App() {
   return (
