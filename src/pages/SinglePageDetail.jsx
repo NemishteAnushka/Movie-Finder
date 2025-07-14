@@ -6,7 +6,7 @@ import styles from "./SinglePageDetail.module.css";
 
 export async function loader({ params }) {
   const imdbID = params?.imdbID;
-  const singlePageEndPoint = `http://www.omdbapi.com/?apikey=${api_key}&i=${imdbID}&plot=full`;
+  const singlePageEndPoint = `https://www.omdbapi.com/?apikey=${api_key}&i=${imdbID}&plot=full`;
   try {
     const response = await axios.get(singlePageEndPoint);
     return {
